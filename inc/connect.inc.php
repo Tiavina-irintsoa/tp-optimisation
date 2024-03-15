@@ -1,10 +1,12 @@
 <?php
-$host = "sql203.infinityfree.com";
-// $username = "root";
-$username = "if0_36134675";
-// $password = "Etu001840!";
-$password = "h038Gs45X0c5Y";
-$database = "if0_36134675_ebuybd";
+// $host = "sql203.infinityfree.com";
+$host = "localhost";
+$username = "root";
+// $username = "if0_36134675";
+$password = "Etu001840!";
+// $password = "h038Gs45X0c5Y";
+$database = "ebuybd";
+// $database = "if0_36134675_ebuybd";
 
 try {
     $mysqli = new mysqli($host, $username, $password, $database);
