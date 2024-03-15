@@ -64,7 +64,7 @@ else {
 						echo '
 							<ul style="float: left;">
 								<li style="float: left; padding: 0px 25px 25px 25px;">
-									<div class="home-prodlist-img"><a href="view_product.php?pid='.$id.'">
+									<div class="home-prodlist-img"><a href="view_product/'. $pName .'-'.$id.'">
 										<img src="../image/product/saree/'.$picture.'" class="home-prodlist-imgi">
 										</a>
 										<div style="text-align: center; padding: 0 0 6px 0;"> <span style="font-size: 15px;">'.$pName.'</span><br> Price: '.$price.' Tk</div>

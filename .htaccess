@@ -1,10 +1,12 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^view_product/?.*-([_a-z0-9]*)-([_a-z0-9]*).html$ view_product.php?pid=$1 [L]
+
 <IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType text/css "access plus 1 year"
-    ExpiresByType text/javascript "access plus 1 year"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/gif "access plus 1 year"
+  ExpiresActive On ExpiresByType text/css "access plus 1 year" ExpiresByType
+  text/javascript "access plus 1 year" ExpiresByType image/jpeg "access plus 1
+  year" ExpiresByType image/png "access plus 1 year" ExpiresByType image/gif
+  "access plus 1 year"
 </IfModule>
 
 <IfModule mod_deflate.c>

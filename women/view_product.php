@@ -45,14 +45,17 @@ $getposts =$mysqli->query("SELECT * FROM products WHERE id ='$pid'") or die(mysq
 
   gtag('config', 'G-5Z597EVW7Z');
 </script>
-	<title>SAREE</title>
+	<title><?php echo "eBuyBD fiche produit - ".$pName  ?></title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta
+      name="description"
+      content="eBuyBD fiche produit - <?php echo $pName ;?>"
+    />
 </head>
 <body>
-
 	<?php include ( "../inc/mainheader.inc.php" ); ?>
-	<div class="categolis">
+	<nav class="categolis">
 		<table>
 			<tr>
 				<th>
@@ -67,19 +70,19 @@ $getposts =$mysqli->query("SELECT * FROM products WHERE id ='$pid'") or die(mysq
 				<th><a href="toilatry.php" style="text-decoration: none;color: #ddd;padding: 4px 12px;background-color: #c7587e;border-radius: 12px;">Toilatry</a></th>
 			</tr>
 		</table>
-	</div>
-	<div style="margin: 0 97px; padding: 10px">
+	</nav>
+	<article style="margin: 0 97px; padding: 10px">
 
 		<?php 
 			echo '
 				<div style="float: left;">
-				<div>
+				<figure>
 					<img src="../image/product/'.$item.'/'.$picture.'" style="height: 500px; width: 500px; padding: 2px; border: 2px solid #c7587e;">
-				</div>
+				</figure>
 				</div>
 				<div style="float: right;width: 40%;color: #067165;background-color: #ddd;padding: 10px;">
 					<div style="">
-						<h3 style="font-size: 25px; font-weight: bold; ">'.$pName.'</h3><hr>
+						<h1 style="font-size: 25px; font-weight: bold; ">'.$pName.'</h1><hr>
 						<h3 style="padding: 20px 0 0 0; font-size: 20px;">Prize: '.$price.' Tk</h3><hr>
 						<h3 style="padding: 20px 0 0 0; font-size: 22px; ">Description:</h3>
 						<p>
@@ -102,7 +105,7 @@ $getposts =$mysqli->query("SELECT * FROM products WHERE id ='$pid'") or die(mysq
 			';
 		?>
 
-	</div>
+	</article>
 	<div style="padding: 30px 95px; font-size: 25px; margin: 0 auto; display: table; width: 98%;">
 		<h3 style="padding-bottom: 20px">Recommand Product For You:</h3>
 		<div>
@@ -120,11 +123,11 @@ $getposts =$mysqli->query("SELECT * FROM products WHERE id ='$pid'") or die(mysq
 						echo '
 							<ul style="float: left;">
 								<li style="float: left; padding: 0px 25px 25px 25px;">
-									<div class="home-prodlist-img"><a href="view_product.php?pid='.$id.'">
+									<article class="home-prodlist-img"><a href="view_product.php?pid='.$id.'">
 										<img src="../image/product/'.$item.'/'.$picture.'" class="home-prodlist-imgi">
 										</a>
 										<div style="text-align: center; padding: 0 0 6px 0;"> <span style="font-size: 15px;">'.$pName.'</span><br> Price: '.$price.' Tk</div>
-									</div>
+									</article>
 									
 								</li>
 							</ul>

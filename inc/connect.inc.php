@@ -1,8 +1,11 @@
-<?php
+    <?php
 // $host = "sql203.infinityfree.com";
 $host = "localhost";
 $username = "root";
 // $username = "if0_36134675";
+$password = "";
+// $password = "h038Gs45X0c5Y";
+// $database = "if0_36134675_ebuybd";
 $password = "Etu001840!";
 // $password = "h038Gs45X0c5Y";
 $database = "ebuybd";

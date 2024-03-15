@@ -1,4 +1,4 @@
-<div class="homepageheader">
+<header class="homepageheader">
 			<div class="signinButton loginButton">
 				<div class="uiloginbutton signinButton loginButton" style="margin-right: 40px;">
 					<?php 
@@ -35,4 +35,4 @@
 				<div class="srcclear"></div>
 				</div>
 			</div>
-		</div>
+		</header>
