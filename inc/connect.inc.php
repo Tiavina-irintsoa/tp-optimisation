@@ -6,7 +6,10 @@ $username = "root";
 $password = "";
 // $password = "h038Gs45X0c5Y";
 // $database = "if0_36134675_ebuybd";
-$database = "e_commerce";
+$password = "Etu001840!";
+// $password = "h038Gs45X0c5Y";
+$database = "ebuybd";
+// $database = "if0_36134675_ebuybd";
 
 try {
     $mysqli = new mysqli($host, $username, $password, $database);
